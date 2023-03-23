@@ -1,0 +1,230 @@
+@media screen and (max-width: 500px) {
+    *{
+        margin: 0;
+        font-family: "roc-grotesk", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .container {
+        margin: auto;
+        overflow: hidden;        
+        background-color: #ebebeb;
+        margin-bottom: 70px;
+        width: 97%;
+    }
+
+    .nav {
+        height: 70px;
+        border-bottom: 1px solid black;
+        position: fixed;
+        bottom: 0;
+        overflow: hidden;
+        width: 97%;
+        white-space: nowrap;
+        background-color: #be0028;
+        padding: 0;
+        margin: 0;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .navelement{
+        display: inline-block;
+        font-size: 30px;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    img{
+        height: 50px;
+    }
+
+    .persona{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: "roc-grotesk-wide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+        border-bottom: 1px solid #be0028;
+        border-radius: 0 0 5px 5px;
+    }
+    .persona .greeting{
+        margin-top: 10px;
+        font-family: "roc-grotesk-wide", sans-serif;
+        font-weight: 400;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .search h3{
+        text-align: justify;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .search .searchbutton input{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+        height: 30px;
+        font-size: 20px;
+        border-top: none;
+        border-right: none;
+    }
+    .map {
+        height: 500px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    #delivery,
+    #information {
+        cursor: pointer;
+    }
+
+    .mapsearch{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mapsearch input{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 30px;
+        border-top:none ;
+        border-right: none;
+        font-size: 20px;
+    }
+
+    .map-bottom{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+        font-size: 20px;
+    }
+
+    .map-bottom input{
+        height: 30px;
+        font-size: 20px;
+        border-top:none ;
+        border-right: none;
+        margin-top: 15px;
+    }
+
+    .wsbutton{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .webshop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .webshop-item{
+        width: 48%;
+        height: 100px;
+        border: 1px solid #00b3d8;
+        /* #90e0ef */
+        margin: auto;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    .webshop-item h4, .webshop-item p{
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+
+    }
+    .webshop-item h4{
+        font-weight: bold;
+    }
+
+    .doctorEle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .doctorEle h3{
+        font-size: 30px;
+    }
+
+    .docs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .doc{
+        width: 100%;
+        height: 170px;
+        margin: auto;
+        text-align: center;
+        background-color: #cacaca;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+        border-radius: 0 0 5px 5px;
+        margin-top: 10px;
+    }
+
+    .doc h4{
+        font-size: 30px;
+    }
+
+    .docbutton{
+        background-color: #90e0ef;
+        width:50%;
+        height: 40px;
+        margin-top: 10px;
+        border-radius: 20px;
+        border: 1px solid #00b3d8;
+        font-size: 20px;
+    }
+
+    .pillmanagement{
+        display:flex;
+        flex-direction: column;
+        margin-top: 15px;
+        text-align: center;
+        height: 900px;
+    }
+
+    .pillmanagement h3{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .pillscont{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .pill{
+        height: 70px;
+        border: 1px solid #00b3d8;
+        background-color: #90e0ef;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        border-radius: 15px;      
+        padding-top: 10px;  
+    }
+
+
+
+}

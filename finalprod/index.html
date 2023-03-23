@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fqk1pkk.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="container">
+        <div class="persona">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="greeting"><h2>Hello, John Doe!</h2></div>
+        </div>
+
+        <!-- *********************BOTTOM NAVBAR******* -->
+
+        <div class="nav">
+            <div id="search" class="navelement"><img src="search.png" id="searchicon" alt="">
+            </div>
+
+            <div id="doctor" class="navelement"><img src="porvos.png" id="doctoricon" alt="">
+            </div>
+
+            <div id="delivery" class="navelement"><img src="ptaska.png" id="deliveryicon" alt="">
+            </div>
+
+            <div id="pillmanagement" class="navelement"><img src="pgyogyszer.png" id="pillicon" alt=""></div>
+
+            <div id="cupon" class="navelement"><img src="pkupon.png" id="kuponicon" alt=""></div>
+        </div>
+
+
+        <!-- **********PAGE ELEMENTS************ -->
+
+        <div class="page">
+
+            <!-- **********SEARCH*********** -->
+
+            <div class="search" id="searchEle">
+                <h3>Please describe your symptoms as accurately as possible!</h3>
+                <div id="searchbutton" class="searchbutton"><input type="text" id="searchInput" placeholder="E.g. hard coughing"></div>
+                <p id="searchResult">With the help of AI our search engine will accurately determine your possible
+                health problem based on your symptoms and personal information provided in your profile.</p><br>
+                <p id="searchResult2"></p>
+            </div>
+
+            <!-- *******DOCTORS APPOINTMENT ELEMENT******** -->
+            <div class="doctorEle" id="doctorEle">
+                <h3>After analysing the provided information we recommend you to reach out to one of the following health specialists in our system.</h3>
+                <div class="docs">
+                    <div class="doc">
+                        <h4>Dr. John Doe</h4>
+                        <img src="porvos.png" alt="">
+                        <p>Specialist of raspiratory disease</p>
+                        <p>Shanghai Medical Centre</p>
+                        <button class="docbutton">Reach out!</button>
+                    </div>
+
+                    <div class="doc">
+                        <h4>Dr. John Doe</h4>
+                        <img src="porvos.png" alt="">
+                        <p>Specialist of raspiratory disease</p>
+                        <p>Shanghai Medical Centre</p>
+                        <button class="docbutton">Reach out!</button>
+                    </div>
+
+                    <div class="doc"><h4>Dr. John Doe</h4>
+                        <img src="porvos.png" alt="">
+                        <p>Specialist of raspiratory disease</p>
+                        <p>Shanghai Medical Centre</p>
+                        <button class="docbutton">Reach out!</button>
+                    </div>
+
+                    <div class="doc"><h4>Dr. John Doe</h4>
+                        <img src="porvos.png" alt="">
+                        <p>Specialist of raspiratory disease</p>
+                        <p>Shanghai Medical Centre</p>
+                        <button class="docbutton">Reach out!</button>
+                    </div>
+
+                    <div class="doc"><h4>Dr. John Doe</h4>
+                        <img src="porvos.png" alt="">
+                        <p>Specialist of raspiratory disease</p>
+                        <p>Shanghai Medical Centre</p>
+                        <button class="docbutton">Reach out!</button>
+                    </div>
+
+                    <div class="doc"><h4>Dr. John Doe</h4>
+                        <img src="porvos.png" alt="">
+                        <p>Specialist of raspiratory disease</p>
+                        <p>Shanghai Medical Centre</p>
+                        <button class="docbutton">Reach out!</button>
+                    </div>
+
+                    <div class="doc"><h4>Dr. John Doe</h4>
+                        <img src="porvos.png" alt="">
+                        <p>Specialist of raspiratory disease</p>
+                        <p>Shanghai Medical Centre</p>
+                        <button class="docbutton">Reach out!</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- ******MAP ELEMENT******** -->
+
+            <div id="mapdiv">
+                <div class="mapsearch" id="mapp">
+                    <h2>What medicine are you looking for?</h2>
+                    <input type="text" placeholder="E.g. algopyrin">
+                </div>
+                <div class="map" id="map"></div>
+                <div id="mappp" class="map-bottom">
+                    <p>Our courier partner will deliver your chosen medicine from the pharmacy. For more information please select your pharmacy.</p><br>
+                    <h3>Or order from our webshop!</h3>
+                    <div id="wsbutton" class="wsbutton"><input id="webshopinput" type="text" placeholder="E.g. paracetamol"></div>
+                    <div class="webshop" id="webshop">
+                        <div class="webshop-item">
+                            <h4>Beclomethasone</h4>
+                            <p>Available in our webshop</p>
+                        </div>
+
+                        <div class="webshop-item">
+                            <h4>Mometasone</h4>
+                            <p>Available in our webshop</p>
+                        </div>
+                        
+                        <div class="webshop-item">
+                            <h4>Budesonide</h4>
+                            <p>Available in our webshop</p>
+                        </div>
+                        
+                        <div class="webshop-item">
+                            <h4>Ciclesonide</h4>
+                            <p>Currently not available in pharmacies near you</p>
+                        </div>
+                        
+                        <div class="webshop-item">
+                            <h4>Fluticasone</h4>
+                            <p>Currently not available in pharmacies near you</p>
+                        </div>
+                        
+                        <div class="webshop-item">
+                            <h4>Inhaler</h4>
+                            <p>Available in our webshop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ******PILL MANAGEMENT********* -->
+            <div class="pillmanagement" id="pillmanagementEle">
+                <h3>Pill management</h3>
+                <div class="pillscont">
+                    <div class="pill"><h2>Beclomethasone</h2><p>Last taken: 1 day ago</p></div>
+                    <div class="pill"><h2>Budesonide</h2><p>Last taken: 1 day ago</p></div>
+                    <div class="pill"><h2>Mometasone</h2><p>Last taken: 1 day ago</p></div>
+                </div>
+            </div>
+
+            <!-- *******CUPON ELEMENT******** -->
+            <div class="cuponelement" id="cuponelement"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
